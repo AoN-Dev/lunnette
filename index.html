@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JessaCL Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <div class="logo-icon" id="logoIcon"></div>
+                <span id="logoText">Jessa Lagura</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#section1">Career</a></li>
+                <li><a href="#section2">Hobbies</a></li>
+                <li><a href="#section4">Contact</a></li>
+            </ul>
+            <a href="#section4" class="cta-button">Let's talk →</a>
+        </div>
+    </nav>
+
+    <!-- Section 1 - Hero -->
+    <section class="section section-1" id="section1">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        
+        <div class="section-content">
+            <div class="text-content">
+                <h1 class="section-title">CREATIVE<br>NOMAD</h1>
+                <p class="section-subtitle">I'm Jessa Lagura — a photographer, licensed teacher, and an editor 
+                    who finds beauty in everyday moments and new places. 
+                    With a love for learning and creating, I blend storytelling, 
+                    travel, and visual art into everything I do.</p>
+            </div>
+            <div class="visual-content">
+                <div class="photo-container" id="heroPhotoContainer">
+                    <div class="photo-card hero-photo-card" data-category="skills">
+                        <img src="images/s8.jpg" alt="Photography Skills">
+                        <div class="photo-overlay">
+                            <h3>Photography</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="photo-card hero-photo-card" data-category="output">
+                        <img src="images/a1.jpg" alt="Creative Output">
+                        <div class="photo-overlay">
+                            <h3>OUTPUT</h3>
+                            <p>Creative Projects</p>
+                        </div>
+                    </div>
+                    <div class="photo-card hero-photo-card" data-category="hobbies">
+                        <img src="images/34.jpg" alt="Landscape Photography">
+                        <div class="photo-overlay">
+                            <h3>Landscape</h3>
+                            <p>Photography</p>
+                        </div>
+                    </div>
+                    <div class="photo-card hero-photo-card" data-category="adventure">
+                        <img src="images/s6.jpg" alt="Adventure Photography">
+                        <div class="photo-overlay">
+                            <h3>ADVENTURE</h3>
+                            <p>Mountain Hiking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Section 2 - Technical Skills -->
+    <section class="section section-2" id="section2">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        
+        <div class="section-content">
+            <div class="text-content">
+                <h1 class="section-title">Technical<br>skills.</h1>
+                <p class="section-subtitle">I'm skilled in Adobe Photoshop and
+                     Lightroom, with a focus on photo retouching, color correction, 
+                     and creative editing. I use both tools to enhance image quality 
+                     and maintain a consistent visual style across projects.</p>
+                <div class="client-logos">
+                    <span class="client-logo">Photoshop</span>
+                    <span class="client-logo">Lightroom</span>
+                    <span class="client-logo">Illustrator</span>
+                    <span class="client-logo">Canva</span>
+                </div>
+            </div>     
+            <div class="visual-content">
+                <div class="image-grid">
+                    <div class="category-box" onclick="openDeckPopup(1)">
+                        <img src="images/P.jpg" alt="Portraits">
+                        <p>Portraits</p>
+                    </div>
+                    <div class="category-box" onclick="openDeckPopup(2)">
+                        <img src="images/piy.jpg" alt="Events">
+                        <p>Events</p>
+                    </div>
+                    <div class="category-box" onclick="openDeckPopup(3)">
+                        <img src="images/a2.jpg" alt="Photo Editing">
+                        <p>Photo Edits</p>
+                    </div>
+                    <div class="category-box" onclick="openDeckPopup(4)">
+                        <img src="images/df.jpg" alt="Graphics">
+                        <p>Graphics</p>
+                    </div>
+                </div>
+
+                <!-- Deck Popup Modal -->
+                <div class="popup-deck" id="popupDeck">
+                    <span class="popup-close" onclick="closeDeckPopup()">&times;</span>
+                    <h2 id="popupDeckTitle"></h2>
+                    <div class="deck-container" id="deckContainer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 - Contact -->
+    <section class="section section-4" id="section4">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+
+        <div class="section-content">
+            <div class="text-content">
+                <h2 class="section-title">Don't hesitate to reach out.</h2>
+                <p class="section-subtitle">
+                    I'm always open to new opportunities and creative collaborations. 
+                    Let's connect and build something impactful, purposeful, and uniquely yours.
+                </p>
+                <h1>CONTACT ME</h1>
+                <p>Let's Build Something Amazing</p>
+                <h3>jessalagura123@gmail.com</h3>
+            </div>
+            <div class="visual-content">
+                <div class="contact-photo-deck" id="contactPhotoDeck">
+                    <div class="photo-card-deck contact-photo-card" id="contactCard1">
+                        <img src="images/a1.jpg" alt="Contact Photo 1" />
+                    </div>
+                    <div class="photo-card-deck contact-photo-card" id="contactCard2">
+                        <img src="images/a.jpg" alt="Contact Photo 2" />
+                    </div>
+                    <div class="photo-card-deck contact-photo-card" id="contactCard3">
+                        <img src="images/s13.jpg" alt="Contact Photo 3" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
